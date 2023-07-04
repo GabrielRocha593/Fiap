@@ -1,0 +1,7 @@
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.csproj.AssemblyReference.cache
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.AssemblyInfoInputs.cache
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.AssemblyInfo.cs
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.csproj.CoreCompileInputs.cache
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.MvcApplicationPartsAssemblyInfo.cs
+F:\Projetos\ProjetoFiapAPI\ProjetoFiapAPI\obj\Debug\net6.0\ProjetoFiapAPI.MvcApplicationPartsAssemblyInfo.cache
