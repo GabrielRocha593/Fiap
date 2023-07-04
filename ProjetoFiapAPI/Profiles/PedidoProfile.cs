@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
-using FilmesApi.Models;
-using SiteAPI.Data.Dtos.Pedido;
-using SiteAPI.Models;
+using ProjetoFiapAPI.Models;
+using ProjetoFiapAPI.Data.Dtos.Pedido;
 
-namespace FilmesApi.Profiles;
+namespace ProjetoFiapAPI.Profiles;
 
 public class PedidoProfile : Profile
 {

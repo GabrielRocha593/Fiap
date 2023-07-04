@@ -6479,11 +6479,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projetos\\ProjetoFiapAPI\\ProjetoFiapAPI\\ProjetoFiapAPI.csproj",
+      "projectUniqueName": "F:\\Projetos\\ProjetoFiapAPI\\GIT\\Fiap\\ProjetoFiapAPI\\ProjetoFiapAPI.csproj",
       "projectName": "ProjetoFiapAPI",
-      "projectPath": "F:\\Projetos\\ProjetoFiapAPI\\ProjetoFiapAPI\\ProjetoFiapAPI.csproj",
+      "projectPath": "F:\\Projetos\\ProjetoFiapAPI\\GIT\\Fiap\\ProjetoFiapAPI\\ProjetoFiapAPI.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "F:\\Projetos\\ProjetoFiapAPI\\ProjetoFiapAPI\\obj\\",
+      "outputPath": "F:\\Projetos\\ProjetoFiapAPI\\GIT\\Fiap\\ProjetoFiapAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

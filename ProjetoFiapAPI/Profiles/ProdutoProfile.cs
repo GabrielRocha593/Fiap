@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using FilmesApi.Models;
-using SiteAPI.Data.Dtos.Produto;
+using ProjetoFiapAPI.Models;
+using ProjetoFiapAPI.Data.Dtos.Produto;
 
-namespace FilmesApi.Profiles
+namespace ProjetoFiapAPI.Profiles
 {
     public class ProdutoProfile : Profile
     {

@@ -1,78 +1,52 @@
 ﻿using AutoMapper;
-using FilmesApi.Data;
-using FilmesApi.Models;
+using ProjetoFiapAPI.Data;
+using ProjetoFiapAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-using SiteAPI.Data.Dtos.Cadastro;
+using ProjetoFiapAPI.Data.Dtos.Cadastro;
+using ProjetoFiapAPI.Data.Dtos.Pedido;
+using ProjetoFiapAPI.Data.Dtos.Itempedido;
 
-namespace FilmesApi.Controllers
+namespace ProjetoFiapAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class ItemPedidoController : ControllerBase
     {
-        private FilmeContext _context;
+        private SiteContext _context;
         private IMapper _mapper;
 
-        public ItemPedidoController(FilmeContext context, IMapper mapper)
+        public ItemPedidoController(SiteContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
 
         [HttpPost]
-        public IActionResult AdicionaEndereco([FromBody] CreateCadastroDto enderecoDto)
+        public IActionResult AdicionaItemPedido([FromBody] CreateCadastroDto itemPedidoDto)
         {
-            Endereco endereco = _mapper.Map<Endereco>(enderecoDto);
-            _context.Enderecos.Add(endereco);
+            ItemPedido itemPedido = _mapper.Map<ItemPedido>(itemPedidoDto);
+            _context.ItemPedido.Add(itemPedido);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaEnderecosPorId), new { Id = endereco.Id }, endereco);
+            return CreatedAtAction(nameof(RecuperaItemPedidoPorId), new { Id = itemPedido.Id }, itemPedido);
         }
 
         [HttpGet]
-        public IEnumerable<ReadCadastroDto> RecuperaEnderecos()
+        public IEnumerable<ReadCadastroDto> RecuperaitemPedido()
         {
-            return _mapper.Map<List<ReadCadastroDto>>(_context.Enderecos);
+            return _mapper.Map<List<ReadCadastroDto>>(_context.ItemPedido);
         }
 
         [HttpGet("{id}")]
-        public IActionResult RecuperaEnderecosPorId(int id)
+        public IActionResult RecuperaItemPedidoPorId(int id)
         {
-            Endereco endereco = _context.Enderecos.FirstOrDefault(endereco => endereco.Id == id);
-            if (endereco != null)
+            ItemPedido itemPedido = _context.ItemPedido.FirstOrDefault(itemPedido => itemPedido.Id == id);
+            if (itemPedido != null)
             {
-                ReadCadastroDto enderecoDto = _mapper.Map<ReadCadastroDto>(endereco);
+                ReadItempedidoDto itemPedidoDto = _mapper.Map<ReadItempedidoDto>(itemPedido);
 
-                return Ok(enderecoDto);
+                return Ok(itemPedidoDto);
             }
             return NotFound();
         }
-
-        [HttpPut("{id}")]
-        public IActionResult AtualizaEndereco(int id, [FromBody] UpdateCadastroDto enderecoDto)
-        {
-            Endereco endereco = _context.Enderecos.FirstOrDefault(endereco => endereco.Id == id);
-            if (endereco == null)
-            {
-                return NotFound();
-            }
-            _mapper.Map(enderecoDto, endereco);
-            _context.SaveChanges();
-            return NoContent();
-        }
-
-
-        [HttpDelete("{id}")]
-        public IActionResult DeletaEndereco(int id)
-        {
-            Endereco endereco = _context.Enderecos.FirstOrDefault(endereco => endereco.Id == id);
-            if (endereco == null)
-            {
-                return NotFound();
-            }
-            _context.Remove(endereco);
-            _context.SaveChanges();
-            return NoContent();
-        }
-
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NRy0cVw83cvhhSjRugMG8k8SMGSiBGjc6w7n8so+PONNOTkXtPnDBVx8iy0vbi9gYsiV9/IL/KXC8e+NLxWwnQ==",
+  "dgSpecHash": "2U89AWP3/2GicHMxBaKWEaHn+NKGH1bxDhjPg33yT9+afwHw6vUNXfB2RyMwybGRpSflDK5rhcZv3BvfUiiZvw==",
   "success": true,
-  "projectFilePath": "F:\\Projetos\\ProjetoFiapAPI\\ProjetoFiapAPI\\ProjetoFiapAPI.csproj",
+  "projectFilePath": "F:\\Projetos\\ProjetoFiapAPI\\GIT\\Fiap\\ProjetoFiapAPI\\ProjetoFiapAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

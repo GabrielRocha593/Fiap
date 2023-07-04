@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using FilmesApi.Models;
-using SiteAPI.Data.Dtos.Cadastro;
+using ProjetoFiapAPI.Models;
+using ProjetoFiapAPI.Data.Dtos.Cadastro;
 
-namespace FilmesApi.Profiles
+namespace ProjetoFiapAPI.Profiles
 {
     public class CadastroProfile : Profile
     {

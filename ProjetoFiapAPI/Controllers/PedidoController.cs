@@ -1,21 +1,22 @@
 ﻿using AutoMapper;
-using FilmesApi.Data;
-using FilmesApi.Data.Dtos;
-using FilmesApi.Models;
+using ProjetoFiapAPI.Data;
+using ProjetoFiapAPI.Data.Dtos;
+using ProjetoFiapAPI.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using ProjetoFiapAPI.Data.Dtos.Pedido;
 
-namespace FilmesApi.Controllers;
+namespace ProjetoFiapAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
 public class PedidoController : ControllerBase
 {
 
-    private FilmeContext _context;
+    private SiteContext _context;
     private IMapper _mapper;
 
-    public PedidoController(FilmeContext context, IMapper mapper)
+    public PedidoController(SiteContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
@@ -23,82 +24,36 @@ public class PedidoController : ControllerBase
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
-    public IActionResult AdicionaFilme(
-        [FromBody] CreatePedidoDto filmeDto)
+    public IActionResult AdicionaPedido(
+        [FromBody] CreatePedidoDto pedidoDto)
     {
-        Filme filme = _mapper.Map<Filme>(filmeDto);
-        _context.Filmes.Add(filme);
+        Pedido pedido = _mapper.Map<Pedido>(pedidoDto);
+        _context.Pedido.Add(pedido);
         _context.SaveChanges();
-        return CreatedAtAction(nameof(RecuperaFilmePorId),
-            new { id = filme.Id },
-            filme);
+        return CreatedAtAction(nameof(RecuperaPedidoPorId), new { id = pedido.Id }, pedido);
     }
 
     [HttpGet]
-    public IEnumerable<ReadPedidoDto> RecuperaFilmes([FromQuery] int skip = 0,
-        [FromQuery] int take = 50,
-        [FromQuery] string? nomeCinema = null)
+    public IEnumerable<ReadPedidoDto> RecuperaPedido([FromQuery] int skip = 0, [FromQuery] int take = 50)
     {
-        if(nomeCinema == null)
-        {
-            return _mapper.Map<List<ReadPedidoDto>>(_context.Filmes.Skip(skip).Take(take).ToList());
-        }
-        return _mapper.Map<List<ReadPedidoDto>>(_context.Filmes.Skip(skip).Take(take).Where(filme => filme.Sessoes
-                .Any(sessao => sessao.Cinema.Nome == nomeCinema)).ToList());
-
+            return _mapper.Map<List<ReadPedidoDto>>(_context.Pedido.Skip(skip).Take(take).ToList());
     }
 
     [HttpGet("{id}")]
-    public IActionResult RecuperaFilmePorId(int id)
+    public IActionResult RecuperaPedidoPorId(int id)
     {
-        var filme = _context.Filmes
-            .FirstOrDefault(filme => filme.Id == id);
-        if (filme == null) return NotFound();
-        var filmeDto = _mapper.Map<ReadPedidoDto>(filme);
-        return Ok(filmeDto);
+        var pedido = _context.Pedido.FirstOrDefault(pedido => pedido.Id == id);
+        if (pedido == null) return NotFound();
+        var pedidoDto = _mapper.Map<ReadPedidoDto>(pedido);
+        return Ok(pedidoDto);
     }
-
-    [HttpPut("{id}")]
-    public IActionResult AtualizaFilme(int id,
-        [FromBody] UpdatePedidoDto filmeDto)
-    {
-        var filme = _context.Filmes.FirstOrDefault(
-            filme => filme.Id == id);
-        if (filme == null) return NotFound();
-        _mapper.Map(filmeDto, filme);
-        _context.SaveChanges();
-        return NoContent();
-    }
-
-    [HttpPatch("{id}")]
-    public IActionResult AtualizaFilmeParcial(int id,
-        JsonPatchDocument<UpdatePedidoDto> patch)
-    {
-        var filme = _context.Filmes.FirstOrDefault(
-            filme => filme.Id == id);
-        if (filme == null) return NotFound();
-
-        var filmeParaAtualizar = _mapper.Map<UpdatePedidoDto>(filme);
-
-        patch.ApplyTo(filmeParaAtualizar, ModelState);
-
-        if (!TryValidateModel(filmeParaAtualizar))
-        {
-            return ValidationProblem(ModelState);
-        }
-        _mapper.Map(filmeParaAtualizar, filme);
-        _context.SaveChanges();
-        return NoContent();
-    }
-
 
     [HttpDelete("{id}")]
-    public IActionResult DeletaFilme(int id)
+    public IActionResult DeletaPedido(int id)
     {
-        var filme = _context.Filmes.FirstOrDefault(
-            filme => filme.Id == id);
-        if (filme == null) return NotFound();
-        _context.Remove(filme);
+        var pedido = _context.Pedido.FirstOrDefault(pedido => pedido.Id == id);
+        if (pedido == null) return NotFound();
+        _context.Remove(pedido);
         _context.SaveChanges();
         return NoContent();
     }

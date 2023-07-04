@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoFiapAPI.Data;
+using ProjetoFiapAPI.Data.Dtos.Produto;
+using ProjetoFiapAPI.Models;
 
 namespace ProjetoFiapAPI.Controllers
 {

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "FilmesApi": {
+    "ProjetoFiapAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,

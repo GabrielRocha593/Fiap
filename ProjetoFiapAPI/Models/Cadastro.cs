@@ -18,5 +18,5 @@ public class Cadastro
     public string? UF { get; set; } = "";
     public string? CEP { get; set; } = "";
 
-    public virtual ICollection<Pedido> pedido { get; set; }
+    public virtual ICollection<Pedido> Pedido { get; set; }
 }

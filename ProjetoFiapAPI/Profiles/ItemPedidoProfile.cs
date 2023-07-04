@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using FilmesApi.Models;
-using SiteAPI.Data.Dtos.Itempedido;
+using ProjetoFiapAPI.Models;
+using ProjetoFiapAPI.Data.Dtos.Itempedido;
 
-namespace FilmesApi.Profiles
+namespace ProjetoFiapAPI.Profiles
 {
     public class ItemPedidoProfile : Profile
     {
