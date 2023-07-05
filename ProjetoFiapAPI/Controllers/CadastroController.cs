@@ -21,7 +21,7 @@ namespace ProjetoFiapAPI.Controllers
 
 
         [HttpPost]
-        public IActionResult AdicionaCinema([FromBody] CreateCadastroDto CadastroDto)
+        public IActionResult AdicionaCadastro([FromBody] CreateCadastroDto CadastroDto)
         {
             Cadastro cadastro = _mapper.Map<Cadastro>(CadastroDto);
             _context.Cadastro.Add(cadastro);
@@ -30,14 +30,14 @@ namespace ProjetoFiapAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<ReadCadastroDto> RecuperaCadastro([FromQuery] int? pedidoId = null)
+        public IEnumerable<ReadCadastroDto> RecuperaCadastro([FromQuery] int? cadastroId = null)
         {
-            if(pedidoId == null)
+            if(cadastroId == null)
             {
                 return _mapper.Map<List<ReadCadastroDto>>(_context.Cadastro.ToList());                        
             }
             //return _mapper.Map<List<ReadCadastroDto>>(_context.Cadastro.FromSqlRaw($"SELECT Id, Nome, EnderecoId FROM cinemas where cinemas.EnderecoId = {pedidoId}").ToList());
-            return _mapper.Map<List<ReadCadastroDto>>(_context.Cadastro.Where(cadastro => cadastro.Pedido.Any(pedido => pedido.Id == pedidoId)).ToList());
+            return _mapper.Map<List<ReadCadastroDto>>(_context.Cadastro.Where(cadastro => cadastro.Id == cadastroId).ToList()); ;
         }
 
         [HttpGet("{id}")]

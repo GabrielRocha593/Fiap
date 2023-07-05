@@ -1,6 +1,5 @@
 ﻿using ProjetoFiapAPI.Models;
 using Microsoft.EntityFrameworkCore;
-using ProjetoFiapAPI.Models;
 
 namespace ProjetoFiapAPI.Data;
 

@@ -22,5 +22,7 @@ namespace ProjetoFiapAPI.Data.Dtos.Cadastro
         public string UF { get; set; } = "";
 
         public string CEP { get; set; } = "";
+
+        public string? Imagem { get; set; } = "";
     }
 }

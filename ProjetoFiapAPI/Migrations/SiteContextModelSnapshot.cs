@@ -40,6 +40,9 @@ namespace ProjetoFiapAPI.Migrations
                     b.Property<string>("Endereco")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Imagem")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Municipio")
                         .HasColumnType("longtext");
 
