@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
+using Azure.Storage.Blobs;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoFiapAPI.Data;
 using ProjetoFiapAPI.Data.Dtos.Cadastro;
 using ProjetoFiapAPI.Models;
+using System.Text.RegularExpressions;
 
 namespace ProjetoFiapAPI.Controllers
 {
@@ -77,6 +79,31 @@ namespace ProjetoFiapAPI.Controllers
             _context.Remove(cadastro);
             _context.SaveChanges();
             return NoContent();
+        }
+
+        public string UploadImage([FromBody] string base64Image)
+        {
+
+            // Gera um nome randomico para imagem
+            var fileName = Guid.NewGuid().ToString() + ".jpg";
+
+            // Limpa o hash enviado
+            var data = new Regex(@"^data:image\/[a-z]+;base64,").Replace(base64Image, "");
+
+            // Gera um array de Bytes
+            byte[] imageBytes = Convert.FromBase64String(data);
+
+            // Define o BLOB no qual a imagem será armazenada
+            var blobClient = new BlobClient("https://gabrielsalomao01.blob.core.windows.net", "fotos", fileName);
+
+            // Envia a imagem
+            using (var stream = new MemoryStream(imageBytes))
+            {
+                blobClient.Upload(stream);
+            }
+
+            // Retorna a URL da imagem
+            return blobClient.Uri.AbsoluteUri;
         }
 
     }
