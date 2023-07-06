@@ -47,3 +47,9 @@ F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\obj\Release\net6.0\refint\Pro
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\obj\Release\net6.0\ProjetoFiapAPI.pdb
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\obj\Release\net6.0\ProjetoFiapAPI.genruntimeconfig.cache
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\obj\Release\net6.0\ref\ProjetoFiapAPI.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\Azure.Core.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\Azure.Storage.Blobs.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\Azure.Storage.Common.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\System.IO.Hashing.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\System.Memory.Data.dll

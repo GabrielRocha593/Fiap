@@ -6,9 +6,13 @@ F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Pr
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\ProjetoFiapAPI.pdb
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\AutoMapper.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Azure.Core.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Azure.Storage.Blobs.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Azure.Storage.Common.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Castle.Core.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Microsoft.AspNetCore.JsonPatch.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Microsoft.Bcl.AsyncInterfaces.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Microsoft.EntityFrameworkCore.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Microsoft.EntityFrameworkCore.Proxies.dll
@@ -23,4 +27,6 @@ F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Po
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.Swagger.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\System.IO.Hashing.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\System.Memory.Data.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\ProjetoFiapAPI\bin\Release\net6.0\publish\ProjetoFiapAPI.deps.json

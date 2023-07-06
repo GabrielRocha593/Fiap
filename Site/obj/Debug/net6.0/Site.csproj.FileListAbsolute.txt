@@ -29,3 +29,11 @@ F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\obj\Debug\net6.0\refint\Site.dll
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\obj\Debug\net6.0\Site.pdb
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\obj\Debug\net6.0\Site.genruntimeconfig.cache
 F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\obj\Debug\net6.0\ref\Site.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\Azure.Core.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\Azure.Storage.Common.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\System.IO.Hashing.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\System.Memory.Data.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\obj\Debug\net6.0\Site.csproj.CopyComplete
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Debug\net6.0\Newtonsoft.Json.dll

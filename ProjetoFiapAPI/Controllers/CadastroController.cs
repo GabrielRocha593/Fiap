@@ -28,7 +28,9 @@ namespace ProjetoFiapAPI.Controllers
             Cadastro cadastro = _mapper.Map<Cadastro>(CadastroDto);
             _context.Cadastro.Add(cadastro);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaCadastroPorId), new { Id = cadastro.Id }, CadastroDto);
+
+            //return CreatedAtAction(nameof(RecuperaCadastroPorId), new { Id = cadastro.Id }, CadastroDto);
+            return CreatedAtAction(nameof(RecuperaCadastroPorId), new { Id = cadastro.Id }, cadastro);
         }
 
         [HttpGet]
@@ -80,31 +82,5 @@ namespace ProjetoFiapAPI.Controllers
             _context.SaveChanges();
             return NoContent();
         }
-
-        public string UploadImage([FromBody] string base64Image)
-        {
-
-            // Gera um nome randomico para imagem
-            var fileName = Guid.NewGuid().ToString() + ".jpg";
-
-            // Limpa o hash enviado
-            var data = new Regex(@"^data:image\/[a-z]+;base64,").Replace(base64Image, "");
-
-            // Gera um array de Bytes
-            byte[] imageBytes = Convert.FromBase64String(data);
-
-            // Define o BLOB no qual a imagem será armazenada
-            var blobClient = new BlobClient("https://gabrielsalomao01.blob.core.windows.net", "fotos", fileName);
-
-            // Envia a imagem
-            using (var stream = new MemoryStream(imageBytes))
-            {
-                blobClient.Upload(stream);
-            }
-
-            // Retorna a URL da imagem
-            return blobClient.Uri.AbsoluteUri;
-        }
-
     }
 }

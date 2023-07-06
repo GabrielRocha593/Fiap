@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8XFQ9Hm3/hZe6VQYf3f6q/Fbo+L2GrPU19v+gnaMct9k9RvVswLg6/H9BtxmfAnZhUZ3D3N8rJM7NSHzVizsYA==",
+  "dgSpecHash": "h4zHV9Ds6k4unLTKXpZiaC2/sE/aKAtAddIihHKgkmdFRZDJlIyoKEroeGM+Dujj34Kw9QYgu5GmTQQjghjklw==",
   "success": true,
   "projectFilePath": "F:\\Projetos\\ProjetoFiapAPI\\GIT\\Fiap\\Site\\Site.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\gabri\\.nuget\\packages\\azure.storage.blobs\\12.16.0\\azure.storage.blobs.12.16.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.storage.common\\12.15.0\\azure.storage.common.12.15.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
