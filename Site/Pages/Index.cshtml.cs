@@ -28,7 +28,6 @@ namespace Site.Pages
         [BindProperty]
         public string Municipio { get; set; } = " ";
 
-
         [BindProperty]
         public IFormFile Imagem { get; set; }
 
@@ -49,7 +48,7 @@ namespace Site.Pages
 
             // Converter os dados para JSON
             var json = JsonConvert.SerializeObject(dados);
-            Console.WriteLine(json);
+            //Console.WriteLine(json);
 
 
             var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
@@ -78,7 +77,7 @@ namespace Site.Pages
                     //form.Add(new StringContent(CadastroRealizado.Id.ToString()), "CadastroId");
                     form.Add(new StreamContent(fileStream), "file", Imagem.FileName);
 
-                    Console.WriteLine(form);
+                    //Console.WriteLine(form);
                     using (var response = await httpClient.PostAsync(UrlImage, form))
                     {
                         // Trate a resposta da chamada REST como desejado

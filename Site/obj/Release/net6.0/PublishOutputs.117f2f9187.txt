@@ -1,0 +1,14 @@
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Site.exe
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\appsettings.Development.json
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\appsettings.json
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Site.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Site.deps.json
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Site.runtimeconfig.json
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Site.pdb
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Azure.Core.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Azure.Storage.Blobs.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Azure.Storage.Common.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\System.IO.Hashing.dll
+F:\Projetos\ProjetoFiapAPI\GIT\Fiap\Site\bin\Release\net6.0\publish\System.Memory.Data.dll
